@@ -1,0 +1,232 @@
+@charset "UFT-8";
+@font-face {
+    font-family: "bebas";
+    src: url(BebasNeue-Regular.ttf) format("truetype");
+    font-size: normal;
+    
+}
+@font-face {
+    font-family: "androidFont";
+    src: url(idroid.otf) format(opentype);
+    font-size: normal;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+:root{
+    --cor1:#5AC0BE;
+    --cor2:#5F9695;
+    --cor3:#47EAE7;
+    --cor4:#566B6B;
+    --cor5:#364140;
+    --cor6:#223333;
+    --fonte-destaque:"bebas";
+    --android-Font:"androidFont";
+    --fontetexto:  "arial";
+
+}
+
+body{
+    font-family: var(--fonte-texto);
+    background-color:#ade4e3;
+    
+
+}
+
+a.externo::after{
+    content: "\00A0\1F517";
+}
+
+nav{
+    background-color: var(--cor6);
+    padding: 10px;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.199);
+}
+
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-family: "bebas";
+    transition-duration: 0.3s;
+
+}
+
+nav > :hover{
+    color: var(--cor1);
+    background-color: #5ac0be2f;
+
+}
+
+main{
+    background-color:white ;
+    padding: 20px;
+    padding-top: 10px;
+    margin: auto;
+    min-width: 150px;
+    max-width: 1200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.199);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px;
+
+}
+
+main h1{
+    font-weight: normal;
+    font-family: var(--android-Font);
+    background-image: linear-gradient(to left, #36b4b2 ,white  );
+    color: var(--cor6);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+    text-indent: 3px;
+
+    
+}
+
+main h2{
+    font-family: var(--android-Font);
+    background-image: linear-gradient(to left, #36b4b2 ,white  );
+    color: var(--cor6);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+    text-indent: 3px;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+main img{
+    width: 100%;
+    
+}
+main .pequena{
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+
+main p{
+    text-align: justify;
+    padding: 20px;
+    color: black;
+    margin: 15px 0px;
+    text-indent: 3em;
+    line-height: 1.4em;
+    
+}
+
+strong{
+  
+    color: var(--cor6);
+    
+}
+
+p > a{
+    background-color:#499796b0 ;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
+header{
+    font-family: var(--fonte-destaque);
+    background-image:linear-gradient(to top, #223333,#5AC0BE);
+    min-height: 150px;
+    padding-top: 40px;
+    color: white;
+    text-align: center;
+}
+
+
+
+header > h1{
+    color: white; 
+    font-size: 3em;
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.349);
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+header > p{
+    font-family: var(--fontetexto);
+    color: white;
+    padding: 1px;
+    font-size: 15px;
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.349);
+    max-width: 500px;
+    
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    
+    
+}
+div.video{
+    
+    background-color: #56bdbb;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    border-radius: 3px;
+    padding-bottom: 54.999999%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside{
+    background-color:#56bdbb;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.37);
+}
+aside h3{
+    background-color: #122b2a;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 5px 5px 0px 0px;
+    
+}
+aside > ul{
+    list-style-type: "\2714\00A0\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer{
+    background-color: var(--cor6);
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+footer  a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+footer a:hover{
+    color:#499796d5 ;
+    text-decoration: underline;
+    
+}
